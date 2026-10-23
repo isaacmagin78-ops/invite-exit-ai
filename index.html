@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>INVITE ONLY · Learn AI. Exit the Field. Build Your Future.</title>
+<meta name="description" content="Invite-only. White-glove path out of 18+ / shady content into real AI skills and income. By application only." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #05070f;
+    --panel: #0b1020;
+    --text: #e8ecf7;
+    --muted: #8b93ad;
+    --cyan: #00e5ff;
+    --pink: #ff2bd6;
+    --gold: #ffd166;
+    --green: #39ff88;
+    --line: rgba(0,229,255,0.18);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Inter, system-ui, sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, #1a0a2e 0%, transparent 50%),
+                radial-gradient(900px 500px at 90% 20%, #0a2a4a 0%, transparent 45%),
+                var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 0 8px; font-size: 13px; color: var(--muted); letter-spacing: 0.04em;
+  }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--line); background: rgba(0,229,255,0.06);
+    color: var(--cyan); font-weight: 700; font-size: 11px; letter-spacing: 0.14em;
+    text-transform: uppercase; padding: 8px 14px; border-radius: 999px;
+  }
+  .badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px var(--green); }
+  hero, .hero {
+    padding: 48px 0 36px; text-align: center;
+  }
+  h1 {
+    font-family: "Space Grotesk", Inter, sans-serif;
+    font-size: clamp(2.1rem, 6vw, 3.4rem);
+    font-weight: 700; line-height: 1.08; letter-spacing: -0.02em;
+    margin: 18px 0 16px;
+  }
+  h1 .grad {
+    background: linear-gradient(90deg, var(--cyan), #7b61ff, var(--pink));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .lead {
+    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+    color: var(--muted); max-width: 620px; margin: 0 auto 28px;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 8px; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px; letter-spacing: 0.02em;
+    padding: 14px 22px; border-radius: 12px; border: none; cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--cyan), #6c5ce7);
+    color: #041018; box-shadow: 0 0 32px rgba(0,229,255,0.35);
+  }
+  .btn-ghost {
+    background: transparent; color: var(--text);
+    border: 1px solid var(--line);
+  }
+  .qr-panel {
+    margin: 36px auto 0; max-width: 340px;
+    padding: 16px; border-radius: 20px;
+    background: linear-gradient(160deg, rgba(0,229,255,0.08), rgba(255,43,214,0.06));
+    border: 1px solid var(--line);
+  }
+  .qr-panel img {
+    width: 100%; height: auto; border-radius: 12px; display: block;
+  }
+  .qr-caption {
+    margin-top: 10px; font-size: 12px; color: var(--muted); text-align: center;
+  }
+  section {
+    padding: 56px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .kicker {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--pink); margin-bottom: 12px;
+  }
+  h2 {
+    font-family: "Space Grotesk", Inter, sans-serif;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 700; margin-bottom: 14px; letter-spacing: -0.02em;
+  }
+  .body-copy { color: var(--muted); font-size: 1.05rem; max-width: 640px; }
+  .grid {
+    display: grid; gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 28px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px; padding: 22px 20px;
+  }
+  .card h3 {
+    font-size: 1rem; font-weight: 700; margin-bottom: 8px;
+    color: var(--text);
+  }
+  .card p { color: var(--muted); font-size: 0.95rem; }
+  .num {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.4rem; font-weight: 700; color: var(--gold); margin-bottom: 6px;
+  }
+  .split {
+    display: grid; gap: 28px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 760px) {
+    .split { grid-template-columns: 1.1fr 0.9fr; align-items: start; }
+  }
+  ul.clean { list-style: none; margin-top: 16px; }
+  ul.clean li {
+    position: relative; padding: 10px 0 10px 28px;
+    color: var(--muted); border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  ul.clean li::before {
+    content: "→"; position: absolute; left: 0; color: var(--cyan); font-weight: 700;
+  }
+  form.apply {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 18px; padding: 24px;
+  }
+  label {
+    display: block; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--muted); margin: 14px 0 6px;
+  }
+  input, textarea, select {
+    width: 100%; background: #070b16; border: 1px solid var(--line);
+    border-radius: 10px; padding: 12px 14px; color: var(--text);
+    font: inherit; outline: none;
+  }
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(0,229,255,0.15);
+  }
+  textarea { min-height: 110px; resize: vertical; }
+  .form-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
+  .guarantee {
+    margin-top: 20px; padding: 16px 18px; border-radius: 12px;
+    background: rgba(57,255,136,0.06); border: 1px solid rgba(57,255,136,0.25);
+    color: var(--green); font-size: 0.95rem; font-weight: 600;
+  }
+  footer {
+    padding: 40px 0 60px; text-align: center;
+    color: var(--muted); font-size: 13px; border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 18px; }
+  .pill {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <span>By application · Invite only</span>
+      <span class="badge">Limited seats</span>
+    </div>
+
+    <div class="hero">
+      <div class="kicker" style="color:var(--cyan)">Not for everyone</div>
+      <h1>
+        Leave the shady field.<br />
+        <span class="grad">Learn AI. Own your future.</span>
+      </h1>
+      <p class="lead">
+        White-glove, invite-only path for people who want out of 18+ / high-risk content —
+        into real AI skills, clean income, and the option to help others make the same exit.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#apply">Request an invite</a>
+        <a class="btn btn-ghost" href="#what">See what ships</a>
+      </div>
+
+      <div class="qr-panel">
+        <img src="data:image/png;base64,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CAAAAAgRAAAAECIAAAAgRAAAAECIAAAAgBABAAAAIQIAAABCBAAAAIQIAAAACBEAAAAQIgAAACBEAAAAQIgAAACAEAEAAAAhAgAAAEIEAAAAhAgAAAAIEQAAABAiAAAAIEQAAABAiAAAAIAQAQAAACECAAAAQgQAAACECAAAAAgRAAAAECIAAAAgRAAAAECIAAAAgBABAAAAIQIAAABCBAAAAIQIAAAACBEAAAAQIgAAACBEAAAAQIgAAACAEAEAAAAhAgAAAEIEAAAAhAgAAAAIEQAAABAiAAAAIEQAAABAiAAAAIAQAQAAACECAAAAQgQAAACECAAAAAgRAAAAECIAAAAgRAAAAECIAAAAgBABAAAAIQIAAABCBAAAAIQIAAAACBEAAAAQIgAAACBEAAAAQIgAAACAEAEAAAAhAgAAAEIEAAAAhAgAAAAIEQAAABAiAAAAIEQAAABAiAAAAIAQAQAAACECAAAAQgQAAACECAAAAAgRAAAAECIAAAAgRAAAAECIAAAAgBABAAAAIQIAAABCBAAAAIQIAAAACBEAAAAQIgAAACBEAAAAQIgAAACAEAEAAAAhAgAAAEIEAAAAhAgAAAAIEQAAABAiAAAAIEQAAABAiAAAAIAQAQAAACECAAAAQgQAAACECAAAAAgRAAAAECIAAAAgRAAAAECIAAAAgBABAAAAIQIAAABCBAAAAIQIAAAACBEAAAAQIgAAACBEAAAAQIgAAACAEAEAAAAhAgAAAEIEAAAAhAgAAAAIEQAAABAiAAAAIEQAAABAiAAAAIAQAQAAACECAAAAQgQAAACECAAAAAgRAAAAECIAAAAgRAAAAECIAAAAgBABAAAAIQIAAABCBAAAAIQIAAAACBEAAAAQIgAAACBEAAAAQIgAAACAEAEAAAAhAgAAAEL+BVI6cC44ZgzKAAAAAElFTkSuQmCC" alt="Invite-only QR code — Learn AI, Build Your Future" width="1024" height="1024" />
+        <p class="qr-caption">Scan only if you’re serious. Lands here — not a random pitch deck.</p>
+      </div>
+    </div>
+
+    <section id="who">
+      <div class="kicker">Who gets in</div>
+      <h2>Two kinds of people. One path out.</h2>
+      <p class="body-copy">
+        This is not “more content tips.” It’s an exit ramp from the shady side of the internet
+        into AI literacy and work that doesn’t cost your future.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>You’re in 18+ or high-risk content</h3>
+          <p>You’re tired of the platform roulette, the stigma, the burnout — and you want a real Plan B that actually pays.</p>
+        </div>
+        <div class="card">
+          <h3>You want leverage, not more grind</h3>
+          <p>You’ll learn AI as a skill stack: create, automate, sell, and eventually help others leave the same field cleanly.</p>
+        </div>
+        <div class="card">
+          <h3>You’re ready to be selective</h3>
+          <p>Invite only. Application only. If it’s not a fit, you’ll hear that directly. No fake waitlist.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="what">
+      <div class="kicker">What ships</div>
+      <h2>Real deliverables. Nothing else.</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="num">01</div>
+          <h3>Full private analysis</h3>
+          <p>Where you are, what’s risky, what’s transferable, and the cleanest path off the shady track into AI work.</p>
+        </div>
+        <div class="card">
+          <div class="num">02</div>
+          <h3>One asset reimagined</h3>
+          <p>We rebuild one piece of your presence so you see the difference with your own eyes — proof before scale.</p>
+        </div>
+        <div class="card">
+          <div class="num">03</div>
+          <h3>AI skill + monetize setup</h3>
+          <p>Practical AI workflow you can run this week, plus a monetization path that doesn’t depend on the old field.</p>
+        </div>
+        <div class="card">
+          <div class="num">04</div>
+          <h3>Help-others track (optional)</h3>
+          <p>Once you’re stable, a way to earn by guiding others out — ethically, with systems, not vibes.</p>
+        </div>
+      </div>
+      <div class="guarantee">
+        Guarantee on the first engagement: 2× the clarity / measurable lift we agree on — or refund on that first fee.
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="split">
+        <div>
+          <div class="kicker">How it works</div>
+          <h2>Private. Selective. Direct.</h2>
+          <p class="body-copy">
+            No invented testimonials. No borrowed logos. You apply, we talk, I decide if it’s a fit.
+          </p>
+          <ul class="clean">
+            <li>Scan / apply with honesty about where you are</li>
+            <li>Short direct conversation (not a sales webinar)</li>
+            <li>If yes: analysis → reimagine → AI + monetize setup</li>
+            <li>If budget is tight: lower-cost advice or intern-style track available</li>
+          </ul>
+        </div>
+        <div>
+          <div class="card" style="padding:26px">
+            <h3 style="margin-bottom:12px">Not for you if…</h3>
+            <p style="color:var(--muted);margin-bottom:10px">You want overnight riches with zero skill.</p>
+            <p style="color:var(--muted);margin-bottom:10px">You need someone to keep you in the shady field longer.</p>
+            <p style="color:var(--muted)">You can’t handle direct feedback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply">
+      <div class="kicker">Apply</div>
+      <h2>Request an invite</h2>
+      <p class="body-copy" style="margin-bottom:22px">
+        Tell the truth. Short answers win. If it’s a fit, you’ll hear back.
+      </p>
+      <form class="apply" name="invite" method="POST" action="https://formsubmit.co/hello@imaginhq.com">
+        <input type="hidden" name="_subject" value="Invite request — Learn AI Exit" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <label for="name">Name</label>
+        <input id="name" name="name" required placeholder="What should I call you?" />
+
+        <label for="contact">Best contact (email or Telegram / IG)</label>
+        <input id="contact" name="contact" required placeholder="you@email.com or @handle" />
+
+        <label for="status">Where are you right now?</label>
+        <select id="status" name="status" required>
+          <option value="">Select…</option>
+          <option>In 18+ / adult content — want out</option>
+          <option>Adjacent / high-risk content — want clean path</option>
+          <option>Already exiting — need AI + monetize structure</option>
+          <option>Want to help others exit (after I stabilize)</option>
+        </select>
+
+        <label for="goal">What does “out” look like for you in 90 days?</label>
+        <textarea id="goal" name="goal" required placeholder="Be specific. Income floor, skill, lifestyle, or just peace."></textarea>
+
+        <label for="budget">First engagement budget</label>
+        <select id="budget" name="budget" required>
+          <option value="">Select…</option>
+          <option>Ready for full package</option>
+          <option>Need lower-cost advice track</option>
+          <option>Intern / trade-style path</option>
+          <option>Not sure — tell me options</option>
+        </select>
+
+        <div style="margin-top:20px">
+          <button class="btn btn-primary" type="submit" style="width:100%">Submit application</button>
+        </div>
+        <p class="form-note">
+          By applying you agree this is selective. No spam. Direct reply only if relevant.
+          Prefer email? Write <a href="mailto:hello@imaginhq.com?subject=Invite%20request">hello@imaginhq.com</a>
+        </p>
+      </form>
+    </section>
+
+    <footer>
+      <div class="pill-row">
+        <span class="pill">Invite only</span>
+        <span class="pill">Learn AI</span>
+        <span class="pill">Exit clean</span>
+        <span class="pill">Help others later</span>
+      </div>
+      <p style="margin-top:18px">
+        Built in the same standard as <a href="https://imaginhq.com" rel="noopener">imaginhq.com</a> —
+        private, selective, direct.
+      </p>
+      <p style="margin-top:8px;opacity:.7">© <span id="y"></span> · Not for everyone.</p>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
